@@ -85,5 +85,4 @@ Dobbeltklikk på ```osc_client_tester.maxpat```
 
 ```
 
-Programmet lytter på OSC og skal bli oppdatert hver gang det lastes ned data fra Frost.
-
+Programmet laster jenvlig ned data fra Frost og videresender på OSC.
