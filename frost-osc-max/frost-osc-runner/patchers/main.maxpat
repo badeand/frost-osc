@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1184.0, 401.0, 1145.0, 1036.0 ],
+		"rect" : [ 1093.0, 401.0, 1236.0, 1036.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -447,7 +447,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 303.5, 45.0, 699.0, 690.0 ],
+					"patching_rect" : [ 303.5, 45.0, 860.0, 933.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -485,14 +485,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 20.0, 246.0, 201.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"autostart" : 1,
-						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
-						"watch" : 0
-					}
-,
 					"text" : "node.script frost-osc.js @autostart 1"
 				}
 
@@ -589,13 +581,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "frost-osc.js",
-				"bootpath" : "~/dev/bnvisuals/frost-osc/frost-osc-max/frost-osc-runner/frost-osc-nodejs",
-				"patcherrelativepath" : "../frost-osc-nodejs",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "JSON",
