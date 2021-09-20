@@ -2,9 +2,9 @@
 	"name" : "frost-osc-runner",
 	"version" : 1,
 	"creationdate" : 3714977392,
-	"modificationdate" : 3714977975,
+	"modificationdate" : 3714983244,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -23,6 +23,14 @@
 		}
 ,
 		"code" : 		{
+			"resize_n4m_monitor_patcher.js" : 			{
+				"kind" : "javascript"
+			}
+,
+			"fit_jweb_to_bounds.js" : 			{
+				"kind" : "javascript"
+			}
+,
 			"helpargs.js" : 			{
 				"kind" : "javascript"
 			}
@@ -32,14 +40,6 @@
 			}
 ,
 			"maxnode-basic.js" : 			{
-				"kind" : "javascript"
-			}
-,
-			"resize_n4m_monitor_patcher.js" : 			{
-				"kind" : "javascript"
-			}
-,
-			"fit_jweb_to_bounds.js" : 			{
 				"kind" : "javascript"
 			}
 ,
