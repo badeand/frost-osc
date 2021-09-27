@@ -1,5 +1,8 @@
 # frost-osc
 
+Se også:
+* [Testprogrammer](./frost-osc-max/testers/doc/README.md)
+
 ## Oppsett og første gangs kjøring
 
 ### Installer Max
@@ -73,16 +76,5 @@ Du skal se blå tekst med "NPM Command Running", og deretter grønn tekst med "N
 Klikk ```Start```
 
 Du skal se grønn tekst: "Process Running"
-
-### Kjør testprogramet
-
-Dobbeltklikk på ```osc_client_tester.maxpat```
-
-```
-└── frost-osc-max
-    └── testers
-        └── osc_client_tester.maxpat      <---
-
-```
 
 Programmet laster jenvlig ned data fra Frost og videresender på OSC.
