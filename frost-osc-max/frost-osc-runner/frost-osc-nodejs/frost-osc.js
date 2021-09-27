@@ -8,7 +8,7 @@ let clientId = "x";
 let clientSecret = "x";
 let osc_out_port = 41234;
 let osc_out_address = 'localhost';
-let interval = 30000;
+let interval = 5000;
 
 function met_observations(sn18700, referencetime, elements, osc_path) {
   var options = {
