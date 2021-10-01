@@ -1,6 +1,7 @@
 const https = require('https')
 const dgram = require('dgram')
 const OSC = require('osc-js')
+const moment = require('moment')
 const sprintf = require('sprintf-js').sprintf;
 
 const socket = dgram.createSocket('udp4')
@@ -57,42 +58,46 @@ function getMetData(futureOffset, obj) {
 
   r = {};
 
-  let d = sprintf("%04d-%02d-%02dT%02d:00:00Z",
-    new Date().getUTCFullYear(),
-    new Date().getUTCMonth() + 1,
-    new Date().getUTCDate(),
-    new Date().getUTCHours() + futureOffset,
+  let now = moment().add(futureOffset, "hours").toDate();
+  let nowUTCString = sprintf("%04d-%02d-%02dT%02d:00:00Z",
+    now.getUTCFullYear(),
+    now.getUTCMonth() + 1,
+    now.getUTCDate(),
+    now.getUTCHours(),
   );
 
   for (i = 0; i < obj.properties.timeseries.length; i++) {
 
-    if (obj.properties.timeseries[i].time == d) {
-
-      let data = obj.properties.timeseries[i].data;
-      details_0 = data.instant.details;
-
+    if (obj.properties.timeseries[i].time == nowUTCString) {
+      details = obj.properties.timeseries[i].data.instant.details;
       r = {
-        precipitation: data.next_1_hours.details.precipitation_amount,
-        temperature: air_temperature = details_0.air_temperature,
-        cloud_area_fraction: details_0.cloud_area_fraction,
-        wind_speed: details_0.wind_speed,
-        symbolCode: data.next_1_hours.summary.symbol_code
+        precipitation_amount: obj.properties.timeseries[i].data.next_1_hours.details.precipitation_amount,
+        air_temperature: air_temperature = details.air_temperature,
+        cloud_area_fraction: details.cloud_area_fraction,
+        wind_speed: details.wind_speed,
+        symbolCode: obj.properties.timeseries[i].data.next_1_hours.summary.symbol_code
       }
-
     }
-
-
   }
   return r;
 }
 
 met_api((obj) => {
 
-    let metData = getMetData(0, obj);
+    let now = getMetData(0, obj);
+    send_osc_messaage("/now/precipitation_amount", now.precipitation_amount)
+    send_osc_messaage("/now/wind_speed", now.wind_speed);
+    send_osc_messaage("/now/air_temperature", now.air_temperature);
 
-    send_osc_messaage("/precipitation_amount", metData.precipitation)
-    send_osc_messaage("/wind_speed", metData.wind_speed);
-    send_osc_messaage("/air_temperature", metData.temperature);
+    let a24h = getMetData(12, obj);
+    send_osc_messaage("/a24h/precipitation_amount", a24h.precipitation_amount)
+    send_osc_messaage("/a24h/wind_speed", a24h.wind_speed);
+    send_osc_messaage("/a24h/air_temperature", a24h.air_temperature);
+
+    let a48h = getMetData(24, obj);
+    send_osc_messaage("/a48h/precipitation_amount", a48h.precipitation_amount)
+    send_osc_messaage("/a48h/wind_speed", a48h.wind_speed);
+    send_osc_messaage("/a48h/air_temperature", a48h.air_temperature);
 
     console.log(JSON.stringify(obj, null, 2));
   },
