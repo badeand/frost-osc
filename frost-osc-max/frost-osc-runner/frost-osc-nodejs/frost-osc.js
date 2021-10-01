@@ -53,38 +53,46 @@ function met_api(f, host, port, path, authorization, userAgent) {
   request.end()
 }
 
-met_api((obj) => {
+function getMetData(futureOffset, obj) {
 
+  r = {};
 
-    sprintf("%d", 12);
+  let d = sprintf("%04d-%02d-%02dT%02d:00:00Z",
+    new Date().getUTCFullYear(),
+    new Date().getUTCMonth() + 1,
+    new Date().getUTCDate(),
+    new Date().getUTCHours() + futureOffset,
+  );
 
-    let d = sprintf("%04d-%02d-%02dT%02d:00:00Z",
-      new Date().getUTCFullYear(),
-      new Date().getUTCMonth() + 1,
-      new Date().getUTCDate(),
-      new Date().getUTCHours(),
-    );
+  for (i = 0; i < obj.properties.timeseries.length; i++) {
 
-    for (i = 0; i < obj.properties.timeseries.length; i++) {
+    if (obj.properties.timeseries[i].time == d) {
 
-      if (obj.properties.timeseries[i].time == d) {
+      let data = obj.properties.timeseries[i].data;
+      details_0 = data.instant.details;
 
-        let data = obj.properties.timeseries[i].data;
-        details_0 = data.instant.details;
-
-        precipitation = data.next_1_hours.details.precipitation_amount;
-        temperature = air_temperature = details_0.air_temperature;
-        cloud_area_fraction = details_0.cloud_area_fraction;
-        wind_speed = details_0.wind_speed;
-        symbolCode = data.next_1_hours.summary.symbol_code;
-
-        console.log("found it");
-
+      r = {
+        precipitation: data.next_1_hours.details.precipitation_amount,
+        temperature: air_temperature = details_0.air_temperature,
+        cloud_area_fraction: details_0.cloud_area_fraction,
+        wind_speed: details_0.wind_speed,
+        symbolCode: data.next_1_hours.summary.symbol_code
       }
-
 
     }
 
+
+  }
+  return r;
+}
+
+met_api((obj) => {
+
+    let metData = getMetData(0, obj);
+
+    send_osc_messaage("/precipitation_amount", metData.precipitation)
+    send_osc_messaage("/wind_speed", metData.wind_speed);
+    send_osc_messaage("/air_temperature", metData.temperature);
 
     console.log(JSON.stringify(obj, null, 2));
   },
