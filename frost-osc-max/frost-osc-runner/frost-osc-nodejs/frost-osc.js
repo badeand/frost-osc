@@ -108,25 +108,50 @@ met_api((obj) => {
   'badeand@badeand.com'
 );
 
-/*
-met_api(
-  (obj) => {
-    console.log(JSON.stringify(obj, null, 2));
-    send_osc_messaage('air_temperature', '' + obj.data["0"].observations["0"].value);
-  },
-  host = 'frost.met.no',
-  port = 443,
-  path = '/observations/v0.jsonld?sources=' + 'SN50540' + '&referencetime=' + 'latest' + '&elements=' + 'air_temperature',
-  'Basic ' + new Buffer(clientId + ':').toString('base64'),
-  null
-);
-*/
+{
+
+  let monthsNegativeOffset = -1;
+  let date = moment().add(monthsNegativeOffset, "month").toDate();
+  let lastDate = moment(date).add(-1, "date").toDate();
+
+  let UTCString = sprintf("%04d-%02d-%02d/%04d-%02d-%02d",
+    date.getUTCFullYear(),
+    date.getUTCMonth() + 1,
+    date.getUTCDate(),
+    lastDate.getUTCFullYear(),
+    lastDate.getUTCMonth() + 2,
+    lastDate.getUTCDate()
+  );
+
+
+  previousMonth = UTCString;
+  met_api(
+    (obj) => {
+
+      best_estimate_mean_air_temperature_P1M = obj.data["0"].observations["0"].value;
+      best_estimate_sum_precipitation_amount_P1M = obj.data["0"].observations["1"].value;
+      mean_max_wind_speed_P1D_P1M = obj.data["0"].observations["1"].value;
+      console.log("helo");
+
+    },
+    host = 'frost.met.no',
+    port = 443,
+    path = '/observations/v0.jsonld?sources=' + 'SN50540' + '&referencetime=' + previousMonth +
+      '&elements='
+      + 'best_estimate_mean(air_temperature%20P1M),'
+      + 'mean(max(wind_speed%20P1D)%20P1M),'
+      + 'best_estimate_sum(precipitation_amount%20P1M)',
+    'Basic ' + new Buffer(clientId + ':').toString('base64'),
+    null
+  );
+}
+
 
 /*
 function get_data() {
-  today = new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate()
+  previousMonth = new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate()
   met_api('SN50540', 'latest', 'air_temperature', 'air_temperature');
-  met_api('SN50540', today, 'sum(precipitation_amount%20P1D)', 'precipitation_amount');
+  met_api('SN50540', previousMonth, 'sum(precipitation_amount%20P1D)', 'precipitation_amount');
   met_api('SN50540', 'latest', 'wind_speed', 'wind_speed');
 }
 
