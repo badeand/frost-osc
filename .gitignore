@@ -3,3 +3,4 @@ frost-osc-nodejs/.idea/vcs.xml
 .idea/vcs.xml
 .idea/modules.xml
 .idea/frost-osc.iml
+/frost-osc-max/frost-osc-runner/frost-osc-nodejs/node_modules/

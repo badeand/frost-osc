@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "osc-js": "^2.1.2"
+    "moment": "^2.29.1",
+    "osc-js": "^2.1.2",
+    "sprintf-js": "^1.1.2"
   }
 }
