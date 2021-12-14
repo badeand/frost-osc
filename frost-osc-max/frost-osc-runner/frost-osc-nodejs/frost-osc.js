@@ -99,7 +99,7 @@ met_api((obj) => {
     send_osc_messaage("/a48h/wind_speed", a48h.wind_speed);
     send_osc_messaage("/a48h/air_temperature", a48h.air_temperature);
 
-    console.log(JSON.stringify(obj, null, 2));
+    // console.log(JSON.stringify(obj, null, 2));
   },
   'api.met.no',
   443,
@@ -107,6 +107,7 @@ met_api((obj) => {
   null,
   'badeand@badeand.com'
 );
+
 
 {
 
@@ -128,10 +129,13 @@ met_api((obj) => {
   met_api(
     (obj) => {
 
+      console.log(JSON.stringify(obj, null, 2));
+
       best_estimate_mean_air_temperature_P1M = obj.data["0"].observations["0"].value;
-      best_estimate_sum_precipitation_amount_P1M = obj.data["0"].observations["1"].value;
+      send_osc_messaage("/best_estimate_mean_air_temperature_P1M", best_estimate_mean_air_temperature_P1M)
       mean_max_wind_speed_P1D_P1M = obj.data["0"].observations["1"].value;
-      console.log("helo");
+      send_osc_messaage("/mean_max_wind_speed_P1D_P1M", mean_max_wind_speed_P1D_P1M)
+
 
     },
     host = 'frost.met.no',

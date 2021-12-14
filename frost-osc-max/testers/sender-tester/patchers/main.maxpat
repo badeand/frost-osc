@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1612.0, 815.0 ],
+		"rect" : [ 1248.0, 380.0, 1612.0, 815.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -133,8 +133,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 625.666690528392792, 356.0, 140.0, 22.0 ],
-					"text" : "/precipitation_amount $1"
+					"patching_rect" : [ 625.666690528392792, 356.0, 165.0, 22.0 ],
+					"text" : "/now/precipitation_amount $1"
 				}
 
 			}
@@ -145,8 +145,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 324.0, 356.0, 93.0, 22.0 ],
-					"text" : "/wind_speed $1"
+					"patching_rect" : [ 324.0, 356.0, 118.0, 22.0 ],
+					"text" : "/now/wind_speed $1"
 				}
 
 			}
@@ -157,8 +157,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 356.0, 113.0, 22.0 ],
-					"text" : "/air_temperature $1"
+					"patching_rect" : [ 18.0, 356.0, 139.0, 22.0 ],
+					"text" : "/now/air_temperature $1"
 				}
 
 			}
