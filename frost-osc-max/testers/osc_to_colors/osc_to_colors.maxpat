@@ -40,6 +40,52 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "## VIZZIE video projector interface ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.projectr.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 364.0, 1017.0, 168.0, 108.0 ],
+					"prototypename" : "pixl",
+					"varname" : "projectr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## The VIZZIE video player/looper ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-5",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.playr.maxpat",
+					"numinlets" : 7,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 873.0, 389.0, 348.0, 158.0 ],
+					"prototypename" : "pixl",
+					"varname" : "playr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
@@ -161,7 +207,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 644.0, 725.0, 268.0, 146.0 ],
+					"patching_rect" : [ 629.0, 698.0, 268.0, 146.0 ],
 					"prototypename" : "pixl",
 					"varname" : "alphablendr",
 					"viewvisibility" : 1
@@ -183,100 +229,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 655.0, 904.0, 230.0, 208.0 ],
+					"patching_rect" : [ 629.0, 876.0, 230.0, 208.0 ],
 					"prototypename" : "pixl",
 					"varname" : "viewr[4]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "## Video pattern generator ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-5",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.patternizr.maxpat",
-					"numinlets" : 11,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 872.0, 101.0, 250.0, 198.0 ],
-					"prototypename" : "pixl",
-					"varname" : "patternizr[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "## View or monitor video input ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.viewr.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1167.0, 694.0, 230.0, 208.0 ],
-					"prototypename" : "pixl",
-					"varname" : "viewr[3]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "## Create a dutone video image ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-7",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.2tonr.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 872.0, 321.0, 228.0, 130.0 ],
-					"prototypename" : "pixl",
-					"varname" : "2toner[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "## Zoom/pan/rotate/offset a video ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-8",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.trans4mr.maxpat",
-					"numinlets" : 7,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 872.0, 477.0, 270.0, 130.0 ],
-					"prototypename" : "pixl",
-					"varname" : "trans4mr[1]",
 					"viewvisibility" : 1
 				}
 
@@ -445,6 +400,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -473,31 +437,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"order" : 0,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
-					"source" : [ "obj-8", 0 ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -568,60 +509,32 @@
 			"obj-33::obj-62" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"obj-33::obj-64" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
 			"obj-33::obj-73" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-5::obj-121" : [ "X offset[2]", "X offset", 0 ],
-			"obj-5::obj-122" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-5::obj-123" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-5::obj-124" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-5::obj-125" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
-			"obj-5::obj-126" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-5::obj-127" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
-			"obj-5::obj-128" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
-			"obj-5::obj-129" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
-			"obj-5::obj-130" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-5::obj-131" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
-			"obj-5::obj-263" : [ "Basis function[1]", "Basis function", 0 ],
-			"obj-5::obj-27" : [ "Absolute value[1]", "Absolute value", 0 ],
-			"obj-5::obj-278" : [ "textbutton[1]", "textbutton[1]", 0 ],
-			"obj-5::obj-29" : [ "Signed output[1]", "Signed output", 0 ],
-			"obj-5::obj-39" : [ "Random seed[1]", "Random seed", 0 ],
+			"obj-5::obj-10" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-5::obj-112::obj-119" : [ "Speed high", "Speed high", 0 ],
+			"obj-5::obj-112::obj-120" : [ "Rate range", "Rate range", 0 ],
+			"obj-5::obj-112::obj-121" : [ "Speed low", "Speed low", 0 ],
+			"obj-5::obj-112::obj-16" : [ "Playback range", "Playback range", 0 ],
+			"obj-5::obj-112::obj-40" : [ "Playback controls", "Playback controls", 0 ],
+			"obj-5::obj-112::obj-79" : [ "Playback position", "Playback position", 0 ],
+			"obj-5::obj-112::obj-89" : [ "Reset range", "Reset range", 0 ],
+			"obj-5::obj-112::obj-92" : [ "Reset speed", "Reset speed", 0 ],
+			"obj-5::obj-20" : [ "pictctrl[94]", "pictctrl[1]", 0 ],
+			"obj-5::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
 			"obj-5::obj-40" : [ "Random table[1]", "Random table", 0 ],
-			"obj-5::obj-44" : [ "Z scale[1]", "Z scale", 0 ],
-			"obj-5::obj-45" : [ "Y scale[1]", "Y scale", 0 ],
-			"obj-5::obj-46" : [ "X scale[1]", "X scale", 0 ],
-			"obj-5::obj-55" : [ "Y offset[2]", "Y offset", 0 ],
-			"obj-5::obj-67" : [ "Z offset[1]", "Z offset", 0 ],
-			"obj-5::obj-92" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-6::obj-20" : [ "letterbox_menu[3]", "letterbox_menu", 0 ],
-			"obj-6::obj-37" : [ "aspect_menu[3]", "aspect_menu", 0 ],
-			"obj-7::obj-12" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
-			"obj-7::obj-27" : [ "Color 2[1]", "Color 2", 0 ],
-			"obj-7::obj-28" : [ "Color 1[1]", "Color 1", 0 ],
-			"obj-7::obj-3" : [ "range[6]", "range", 0 ],
-			"obj-7::obj-45" : [ "Saturation 1[1]", "Saturation 1", 0 ],
-			"obj-7::obj-46" : [ "Saturation 2[1]", "Saturation 2", 0 ],
-			"obj-7::obj-49" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
-			"obj-7::obj-53" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
-			"obj-7::obj-54" : [ "pictctrl[27]", "pictctrl[1]", 0 ],
-			"obj-7::obj-56::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
-			"obj-7::obj-58" : [ "pictctrl[28]", "pictctrl[1]", 0 ],
-			"obj-7::obj-62" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
-			"obj-7::obj-64" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-7::obj-73" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-8::obj-104" : [ "pictctrl[32]", "pictctrl[1]", 0 ],
-			"obj-8::obj-119" : [ "Zoom", "Zoom", 0 ],
-			"obj-8::obj-120" : [ "Zoom range", "Zoom range", 1 ],
-			"obj-8::obj-121" : [ "zoom[1]", "Zoom", 0 ],
-			"obj-8::obj-3" : [ "range[14]", "range", 0 ],
-			"obj-8::obj-37" : [ "Y offset[3]", "Y offset", 0 ],
-			"obj-8::obj-41" : [ "pictctrl[33]", "pictctrl[1]", 0 ],
-			"obj-8::obj-53" : [ "pictctrl[31]", "pictctrl[1]", 0 ],
-			"obj-8::obj-56::obj-23" : [ "gswitch2[5]", "gswitch2", 0 ],
-			"obj-8::obj-64" : [ "Mode", "Mode", 0 ],
-			"obj-8::obj-65" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
-			"obj-8::obj-66" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
-			"obj-8::obj-68" : [ "X offset[3]", "X offset", 0 ],
-			"obj-8::obj-91" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
-			"obj-8::obj-92" : [ "Rotation[1]", "Rotation", 0 ],
+			"obj-5::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-5::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-5::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-5::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-5::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-5::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-6::obj-12" : [ "Fullscreen", "Fullscreen", 0 ],
+			"obj-6::obj-16" : [ "Toggle display", "Toggle display", 0 ],
+			"obj-6::obj-1::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
+			"obj-6::obj-2" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
+			"obj-6::obj-3" : [ "toggle", "toggle", 0 ],
+			"obj-6::obj-41" : [ "pictctrl[73]", "pictctrl[1]", 0 ],
+			"obj-6::obj-50" : [ "pictctrl[72]", "pictctrl[1]", 0 ],
+			"obj-6::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -659,172 +572,25 @@
 					"parameter_longname" : "Mode[1]"
 				}
 ,
-				"obj-5::obj-121" : 				{
-					"parameter_longname" : "X offset[2]"
-				}
-,
-				"obj-5::obj-122" : 				{
-					"parameter_longname" : "pictctrl[17]"
-				}
-,
-				"obj-5::obj-123" : 				{
-					"parameter_longname" : "pictctrl[20]"
-				}
-,
-				"obj-5::obj-124" : 				{
-					"parameter_longname" : "pictctrl[19]"
-				}
-,
-				"obj-5::obj-125" : 				{
-					"parameter_longname" : "pictctrl[10]"
-				}
-,
-				"obj-5::obj-126" : 				{
-					"parameter_longname" : "pictctrl[13]"
-				}
-,
-				"obj-5::obj-127" : 				{
-					"parameter_longname" : "pictctrl[11]"
-				}
-,
-				"obj-5::obj-128" : 				{
-					"parameter_longname" : "pictctrl[14]"
-				}
-,
-				"obj-5::obj-129" : 				{
-					"parameter_longname" : "pictctrl[15]"
-				}
-,
-				"obj-5::obj-130" : 				{
-					"parameter_longname" : "pictctrl[18]"
-				}
-,
-				"obj-5::obj-131" : 				{
-					"parameter_longname" : "pictctrl[12]"
-				}
-,
-				"obj-5::obj-263" : 				{
-					"parameter_longname" : "Basis function[1]"
-				}
-,
-				"obj-5::obj-27" : 				{
-					"parameter_longname" : "Absolute value[1]"
-				}
-,
-				"obj-5::obj-29" : 				{
-					"parameter_longname" : "Signed output[1]"
-				}
-,
-				"obj-5::obj-39" : 				{
-					"parameter_longname" : "Random seed[1]"
+				"obj-5::obj-20" : 				{
+					"parameter_longname" : "pictctrl[94]"
 				}
 ,
 				"obj-5::obj-40" : 				{
-					"parameter_longname" : "Random table[1]"
+					"parameter_longname" : "Random table[1]",
+					"parameter_shortname" : "Random table"
 				}
 ,
-				"obj-5::obj-44" : 				{
-					"parameter_longname" : "Z scale[1]"
+				"obj-6::obj-2" : 				{
+					"parameter_longname" : "pictctrl[71]"
 				}
 ,
-				"obj-5::obj-45" : 				{
-					"parameter_longname" : "Y scale[1]"
+				"obj-6::obj-41" : 				{
+					"parameter_longname" : "pictctrl[73]"
 				}
 ,
-				"obj-5::obj-46" : 				{
-					"parameter_longname" : "X scale[1]"
-				}
-,
-				"obj-5::obj-55" : 				{
-					"parameter_longname" : "Y offset[2]"
-				}
-,
-				"obj-5::obj-67" : 				{
-					"parameter_longname" : "Z offset[1]"
-				}
-,
-				"obj-5::obj-92" : 				{
-					"parameter_longname" : "pictctrl[16]"
-				}
-,
-				"obj-6::obj-20" : 				{
-					"parameter_longname" : "letterbox_menu[3]"
-				}
-,
-				"obj-6::obj-37" : 				{
-					"parameter_longname" : "aspect_menu[3]"
-				}
-,
-				"obj-7::obj-12" : 				{
-					"parameter_longname" : "pictctrl[23]"
-				}
-,
-				"obj-7::obj-49" : 				{
-					"parameter_longname" : "pictctrl[24]"
-				}
-,
-				"obj-7::obj-53" : 				{
-					"parameter_longname" : "pictctrl[25]"
-				}
-,
-				"obj-7::obj-54" : 				{
-					"parameter_longname" : "pictctrl[27]"
-				}
-,
-				"obj-7::obj-58" : 				{
-					"parameter_longname" : "pictctrl[28]"
-				}
-,
-				"obj-7::obj-62" : 				{
-					"parameter_longname" : "pictctrl[26]"
-				}
-,
-				"obj-7::obj-64" : 				{
-					"parameter_longname" : "pictctrl[22]"
-				}
-,
-				"obj-7::obj-73" : 				{
-					"parameter_longname" : "pictctrl[21]"
-				}
-,
-				"obj-8::obj-104" : 				{
-					"parameter_longname" : "pictctrl[32]"
-				}
-,
-				"obj-8::obj-121" : 				{
-					"parameter_longname" : "zoom[1]"
-				}
-,
-				"obj-8::obj-37" : 				{
-					"parameter_longname" : "Y offset[3]"
-				}
-,
-				"obj-8::obj-41" : 				{
-					"parameter_longname" : "pictctrl[33]"
-				}
-,
-				"obj-8::obj-53" : 				{
-					"parameter_longname" : "pictctrl[31]"
-				}
-,
-				"obj-8::obj-65" : 				{
-					"parameter_longname" : "pictctrl[29]"
-				}
-,
-				"obj-8::obj-66" : 				{
-					"parameter_longname" : "pictctrl[30]"
-				}
-,
-				"obj-8::obj-68" : 				{
-					"parameter_longname" : "X offset[3]"
-				}
-,
-				"obj-8::obj-91" : 				{
-					"parameter_longname" : "pictctrl[34]"
-				}
-,
-				"obj-8::obj-92" : 				{
-					"parameter_longname" : "Rotation[1]"
+				"obj-6::obj-50" : 				{
+					"parameter_longname" : "pictctrl[72]"
 				}
 
 			}
@@ -937,6 +703,30 @@
 , 			{
 				"name" : "vzgl-pwindow.maxpat",
 				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.playr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "playr_controls.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-blackframe.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.projectr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
