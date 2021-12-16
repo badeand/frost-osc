@@ -1,0 +1,93 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ptr",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"bfgener8r::zoom-mult" : [ 1 ],
+					"bfgener8r::lozoom" : [ 2.0 ],
+					"bfgener8r::hizoom" : [ -15.748031496062993 ],
+					"bfgener8r::speed" : [ 0.3 ],
+					"viewr::lboxmenu" : [ 0.0 ],
+					"vz.2tonr::saturation1" : [ 1.0 ],
+					"vz.2tonr::saturation2[1]" : [ 0.020833333954215 ],
+					"vz.2tonr::color1" : [ 0.0, 0.0, 1.0, 1.0, 0.666666666666667, 1.0, 0.501960784313725 ],
+					"vz.2tonr::color12" : [ 0.0, 0.03125, 0.0, 1.0, 0.333333333333333, 1.0, 0.015686274509804 ],
+					"vz.2tonr[1]::saturation1" : [ 1.0 ],
+					"vz.2tonr[1]::color1" : [ 0.416666656732559, 0.458333343267441, 0.5, 1.0, 0.588235294117647, 0.090196078431373, 0.458823529411765 ],
+					"vz.2tonr[1]::saturation2[1]" : [ 1.0 ],
+					"vz.2tonr[1]::color12" : [ 0.891057769739318, 0.487971517774794, 1.0, 1.0, 0.797872340425532, 1.0, 0.743985758887397 ],
+					"viewr[1]::lboxmenu" : [ 0.0 ],
+					"bfgener8r[1]::lozoom" : [ 1.0 ],
+					"bfgener8r[1]::hizoom" : [ 1.0 ],
+					"bfgener8r[1]::speed" : [ 2.0 ],
+					"bfgener8r[1]::zoom-mult" : [ 0 ],
+					"mixfadr::operator" : [ 3.0 ],
+					"mixfadr::xfade-value" : [ 0.211023622047244 ],
+					"viewr[2]::lboxmenu" : [ 0.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"bfgener8r::zoom-mult" : [ 1 ],
+					"bfgener8r::lozoom" : [ 2.0 ],
+					"bfgener8r::hizoom" : [ -3.401574803149604 ],
+					"bfgener8r::speed" : [ 3.953543307086613 ],
+					"viewr::lboxmenu" : [ 0.0 ],
+					"vz.2tonr::saturation1" : [ 1.0 ],
+					"vz.2tonr::saturation2[1]" : [ 0.0 ],
+					"vz.2tonr::color1" : [ 0.0, 0.5, 0.84375, 1.0, 0.568627450980392, 1.0, 0.423529411764706 ],
+					"vz.2tonr::color12" : [ 0.697916686534882, 0.0, 0.0, 1.0, 0.0, 1.0, 0.349019607843137 ],
+					"vz.2tonr[1]::saturation1" : [ 1.0 ],
+					"vz.2tonr[1]::color1" : [ 0.416666656732559, 0.458333343267441, 0.5, 1.0, 0.588235294117647, 0.090196078431373, 0.458823529411765 ],
+					"vz.2tonr[1]::saturation2[1]" : [ 1.0 ],
+					"vz.2tonr[1]::color12" : [ 0.891057769739318, 0.487971517774794, 1.0, 1.0, 0.797872340425532, 1.0, 0.743985758887397 ],
+					"viewr[1]::lboxmenu" : [ 0.0 ],
+					"bfgener8r[1]::lozoom" : [ 1.0 ],
+					"bfgener8r[1]::hizoom" : [ 1.0 ],
+					"bfgener8r[1]::speed" : [ 2.0 ],
+					"bfgener8r[1]::zoom-mult" : [ 0 ],
+					"mixfadr::operator" : [ 1.0 ],
+					"mixfadr::xfade-value" : [ 0.897637795275591 ],
+					"viewr[2]::lboxmenu" : [ 0.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"bfgener8r::zoom-mult" : [ 0 ],
+					"bfgener8r::lozoom" : [ -1.590551167726517 ],
+					"bfgener8r::hizoom" : [ 1.0 ],
+					"bfgener8r::speed" : [ 8.0 ],
+					"viewr::lboxmenu" : [  ],
+					"vz.2tonr::saturation1" : [  ],
+					"vz.2tonr::saturation2[1]" : [  ],
+					"vz.2tonr::color1" : [  ],
+					"vz.2tonr::color12" : [  ],
+					"vz.2tonr[1]::saturation1" : [  ],
+					"vz.2tonr[1]::color1" : [  ],
+					"vz.2tonr[1]::saturation2[1]" : [  ],
+					"vz.2tonr[1]::color12" : [  ],
+					"viewr[1]::lboxmenu" : [  ],
+					"bfgener8r[1]::lozoom" : [  ],
+					"bfgener8r[1]::hizoom" : [  ],
+					"bfgener8r[1]::speed" : [  ],
+					"bfgener8r[1]::zoom-mult" : [  ],
+					"mixfadr::operator" : [  ],
+					"mixfadr::xfade-value" : [  ],
+					"viewr[2]::lboxmenu" : [  ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

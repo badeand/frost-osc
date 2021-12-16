@@ -1,0 +1,36 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "main",
+	"origin" : "main",
+	"type" : "patcher",
+	"subtype" : "Undefined",
+	"embed" : 0,
+	"snapshot" : 	{
+		"valuedictionary" : 		{
+			"parameter_values" : 			{
+				"Mix 1" : 100.0,
+				"Mix 2" : 100.0,
+				"Mix 3" : 12.5,
+				"Mix 4" : 33.0,
+				"fontsize" : 75.000000000000071,
+				"fontsize[1]" : 90.0,
+				"gswitch2[4]" : 1.0,
+				"gswitch2[5]" : 1.0,
+				"gswitch2[6]" : 1.0,
+				"gswitch2[7]" : 1.0,
+				"letterbox_menu" : 0.0,
+				"letterbox_menu[1]" : 0.0,
+				"letterbox_menu[2]" : 0.0,
+				"blob" : 				{
+					"range[3]" : [ 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
