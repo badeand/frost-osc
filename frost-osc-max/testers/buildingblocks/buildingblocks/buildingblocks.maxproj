@@ -2,7 +2,7 @@
 	"name" : "buildingblocks",
 	"version" : 1,
 	"creationdate" : 3722532031,
-	"modificationdate" : 3722861521,
+	"modificationdate" : 3722875042,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -22,6 +22,21 @@
 			}
 ,
 			"weathericon.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"pos.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"layr.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"txt.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
