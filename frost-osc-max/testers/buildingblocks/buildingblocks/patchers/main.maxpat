@@ -40,46 +40,12 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
+					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 910.0, 235.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 910.0, 273.0, 196.0, 22.0 ],
-					"text" : "position_x 0.4, position_y 0, layer 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-17",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bfg.maxpat",
-					"numinlets" : 12,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 910.0, 327.0, 336.0, 210.0 ],
-					"varname" : "bfg[2]",
-					"viewvisibility" : 1
+					"numoutlets" : 0,
+					"patching_rect" : [ 838.0, 577.0, 32.0, 22.0 ],
+					"text" : "print"
 				}
 
 			}
@@ -104,30 +70,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 543.0, 273.0, 196.0, 22.0 ],
 					"text" : "position_x 0.2, position_y 0, layer 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 183.0, 249.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 183.0, 287.0, 200.0, 22.0 ],
-					"text" : "position_x -0.2, position_y 0, layer 1"
 				}
 
 			}
@@ -269,32 +211,11 @@
 					"maxclass" : "bpatcher",
 					"name" : "bfg.maxpat",
 					"numinlets" : 12,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 543.0, 327.0, 336.0, 210.0 ],
 					"varname" : "bfg[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-34",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bfg.maxpat",
-					"numinlets" : 12,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 183.0, 335.0, 336.0, 210.0 ],
-					"varname" : "bfg",
 					"viewvisibility" : 1
 				}
 
@@ -600,20 +521,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"midpoints" : [ 1020.0, 1389.0, 1087.25, 1389.0, 1087.25, 1206.0, 1113.5, 1206.0 ],
 					"source" : [ "obj-20", 1 ]
@@ -693,6 +600,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-37", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 1 ],
 					"midpoints" : [ 1168.5, 1356.0, 1215.0, 1356.0, 1215.0, 1403.0, 1155.5, 1403.0 ],
 					"source" : [ "obj-38", 0 ]
@@ -703,13 +617,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -731,13 +638,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -780,92 +680,8 @@
 		"parameters" : 		{
 			"obj-12::obj-45" : [ "live.text[3]", "live.text", 0 ],
 			"obj-12::obj-61" : [ "scale[3]", "scale", 0 ],
-			"obj-17::obj-100" : [ "Speed[3]", "Speed", 1 ],
-			"obj-17::obj-21" : [ "Colorize[3]", "Colorize", 0 ],
-			"obj-17::obj-278" : [ "textbutton[3]", "textbutton[1]", 0 ],
-			"obj-17::obj-5" : [ "Function[3]", "Function", 0 ],
-			"obj-17::obj-55" : [ "Bcolorize[3]", "Bcolorize", 0 ],
-			"obj-17::obj-56" : [ "Gcolorize[3]", "Gcolorize", 0 ],
-			"obj-17::obj-57" : [ "Rcolorize[3]", "Rcolorize", 0 ],
-			"obj-17::obj-61" : [ "Zoom hi[3]", "Zoom", 1 ],
-			"obj-17::obj-63" : [ "Zoom range[5]", "Zoom range", 1 ],
-			"obj-17::obj-78" : [ "Zoom lo[3]", "Zoom", 1 ],
-			"obj-17::obj-91::obj-10::obj-11" : [ "Jitter[16]", "Jitter", 0 ],
-			"obj-17::obj-91::obj-10::obj-19" : [ "Amount[2]", "Amount", 0 ],
-			"obj-17::obj-91::obj-11::obj-11" : [ "Jitter[15]", "Jitter", 0 ],
-			"obj-17::obj-91::obj-11::obj-18" : [ "Smoothing[2]", "Smoothing", 0 ],
-			"obj-17::obj-91::obj-12::obj-23" : [ "Gain[17]", "Gain", 0 ],
-			"obj-17::obj-91::obj-12::obj-25" : [ "Offset[17]", "Offset", 0 ],
-			"obj-17::obj-91::obj-12::obj-27" : [ "Lacunarity[17]", "Lacunarity", 0 ],
-			"obj-17::obj-91::obj-12::obj-31" : [ "H value[17]", "H value", 0 ],
-			"obj-17::obj-91::obj-13::obj-11" : [ "Jitter[14]", "Jitter", 0 ],
-			"obj-17::obj-91::obj-15::obj-11" : [ "H value[18]", "H value", 0 ],
-			"obj-17::obj-91::obj-15::obj-16" : [ "Lacunarity[18]", "Lacunarity", 0 ],
-			"obj-17::obj-91::obj-15::obj-18" : [ "Offset[18]", "Offset", 0 ],
-			"obj-17::obj-91::obj-15::obj-19" : [ "Gain[18]", "Gain", 0 ],
-			"obj-17::obj-91::obj-1::obj-24" : [ "Gain[14]", "Gain", 0 ],
-			"obj-17::obj-91::obj-1::obj-26" : [ "Offset[14]", "Offset", 0 ],
-			"obj-17::obj-91::obj-1::obj-28" : [ "Lacunarity[14]", "Lacunarity", 0 ],
-			"obj-17::obj-91::obj-1::obj-32" : [ "H value[14]", "H value", 0 ],
-			"obj-17::obj-91::obj-3::obj-11" : [ "Distortion[2]", "Distortion", 0 ],
-			"obj-17::obj-91::obj-4::obj-24" : [ "Gain[15]", "Gain", 0 ],
-			"obj-17::obj-91::obj-4::obj-26" : [ "Offset[15]", "Offset", 0 ],
-			"obj-17::obj-91::obj-4::obj-28" : [ "Lacunarity[15]", "Lacunarity", 0 ],
-			"obj-17::obj-91::obj-4::obj-32" : [ "H value[15]", "H value", 0 ],
-			"obj-17::obj-91::obj-5::obj-23" : [ "Gain[16]", "Gain", 0 ],
-			"obj-17::obj-91::obj-5::obj-25" : [ "Offset[16]", "Offset", 0 ],
-			"obj-17::obj-91::obj-5::obj-27" : [ "Lacunarity[16]", "Lacunarity", 0 ],
-			"obj-17::obj-91::obj-5::obj-31" : [ "H value[16]", "H value", 0 ],
-			"obj-17::obj-91::obj-6::obj-11" : [ "Jitter[18]", "Jitter", 0 ],
-			"obj-17::obj-91::obj-6::obj-24" : [ "X crackle[2]", "X crackle", 0 ],
-			"obj-17::obj-91::obj-6::obj-28" : [ "Y crackle[2]", "Y crackle", 0 ],
-			"obj-17::obj-91::obj-6::obj-29" : [ "Z crackle[2]", "Z crackle", 0 ],
-			"obj-17::obj-91::obj-9::obj-11" : [ "Jitter[17]", "Jitter", 0 ],
-			"obj-17::obj-91::obj-9::obj-16" : [ "Shading[2]", "Shading", 0 ],
 			"obj-1::obj-45" : [ "live.text[2]", "live.text", 0 ],
 			"obj-1::obj-61" : [ "scale[2]", "scale", 0 ],
-			"obj-34::obj-100" : [ "Speed[1]", "Speed", 1 ],
-			"obj-34::obj-21" : [ "Colorize[1]", "Colorize", 0 ],
-			"obj-34::obj-278" : [ "textbutton[1]", "textbutton[1]", 0 ],
-			"obj-34::obj-5" : [ "Function[1]", "Function", 0 ],
-			"obj-34::obj-55" : [ "Bcolorize[1]", "Bcolorize", 0 ],
-			"obj-34::obj-56" : [ "Gcolorize[1]", "Gcolorize", 0 ],
-			"obj-34::obj-57" : [ "Rcolorize[1]", "Rcolorize", 0 ],
-			"obj-34::obj-61" : [ "Zoom hi[1]", "Zoom", 1 ],
-			"obj-34::obj-63" : [ "Zoom range[3]", "Zoom range", 1 ],
-			"obj-34::obj-78" : [ "Zoom lo[1]", "Zoom", 1 ],
-			"obj-34::obj-91::obj-10::obj-11" : [ "Jitter[7]", "Jitter", 0 ],
-			"obj-34::obj-91::obj-10::obj-19" : [ "Amount[1]", "Amount", 0 ],
-			"obj-34::obj-91::obj-11::obj-11" : [ "Jitter[6]", "Jitter", 0 ],
-			"obj-34::obj-91::obj-11::obj-18" : [ "Smoothing[1]", "Smoothing", 0 ],
-			"obj-34::obj-91::obj-12::obj-23" : [ "Gain[8]", "Gain", 0 ],
-			"obj-34::obj-91::obj-12::obj-25" : [ "Offset[8]", "Offset", 0 ],
-			"obj-34::obj-91::obj-12::obj-27" : [ "Lacunarity[8]", "Lacunarity", 0 ],
-			"obj-34::obj-91::obj-12::obj-31" : [ "H value[8]", "H value", 0 ],
-			"obj-34::obj-91::obj-13::obj-11" : [ "Jitter[5]", "Jitter", 0 ],
-			"obj-34::obj-91::obj-15::obj-11" : [ "H value[9]", "H value", 0 ],
-			"obj-34::obj-91::obj-15::obj-16" : [ "Lacunarity[9]", "Lacunarity", 0 ],
-			"obj-34::obj-91::obj-15::obj-18" : [ "Offset[9]", "Offset", 0 ],
-			"obj-34::obj-91::obj-15::obj-19" : [ "Gain[9]", "Gain", 0 ],
-			"obj-34::obj-91::obj-1::obj-24" : [ "Gain[5]", "Gain", 0 ],
-			"obj-34::obj-91::obj-1::obj-26" : [ "Offset[5]", "Offset", 0 ],
-			"obj-34::obj-91::obj-1::obj-28" : [ "Lacunarity[5]", "Lacunarity", 0 ],
-			"obj-34::obj-91::obj-1::obj-32" : [ "H value[5]", "H value", 0 ],
-			"obj-34::obj-91::obj-3::obj-11" : [ "Distortion[1]", "Distortion", 0 ],
-			"obj-34::obj-91::obj-4::obj-24" : [ "Gain[6]", "Gain", 0 ],
-			"obj-34::obj-91::obj-4::obj-26" : [ "Offset[6]", "Offset", 0 ],
-			"obj-34::obj-91::obj-4::obj-28" : [ "Lacunarity[6]", "Lacunarity", 0 ],
-			"obj-34::obj-91::obj-4::obj-32" : [ "H value[6]", "H value", 0 ],
-			"obj-34::obj-91::obj-5::obj-23" : [ "Gain[7]", "Gain", 0 ],
-			"obj-34::obj-91::obj-5::obj-25" : [ "Offset[7]", "Offset", 0 ],
-			"obj-34::obj-91::obj-5::obj-27" : [ "Lacunarity[7]", "Lacunarity", 0 ],
-			"obj-34::obj-91::obj-5::obj-31" : [ "H value[7]", "H value", 0 ],
-			"obj-34::obj-91::obj-6::obj-11" : [ "Jitter[9]", "Jitter", 0 ],
-			"obj-34::obj-91::obj-6::obj-24" : [ "X crackle[1]", "X crackle", 0 ],
-			"obj-34::obj-91::obj-6::obj-28" : [ "Y crackle[1]", "Y crackle", 0 ],
-			"obj-34::obj-91::obj-6::obj-29" : [ "Z crackle[1]", "Z crackle", 0 ],
-			"obj-34::obj-91::obj-9::obj-11" : [ "Jitter[8]", "Jitter", 0 ],
-			"obj-34::obj-91::obj-9::obj-16" : [ "Shading[1]", "Shading", 0 ],
 			"obj-37::obj-100" : [ "Speed[2]", "Speed", 1 ],
 			"obj-37::obj-21" : [ "Colorize[2]", "Colorize", 0 ],
 			"obj-37::obj-278" : [ "textbutton[2]", "textbutton[1]", 0 ],
@@ -922,332 +738,12 @@
 					"parameter_longname" : "scale[3]"
 				}
 ,
-				"obj-17::obj-100" : 				{
-					"parameter_longname" : "Speed[3]"
-				}
-,
-				"obj-17::obj-21" : 				{
-					"parameter_longname" : "Colorize[3]"
-				}
-,
-				"obj-17::obj-5" : 				{
-					"parameter_longname" : "Function[3]"
-				}
-,
-				"obj-17::obj-55" : 				{
-					"parameter_longname" : "Bcolorize[3]"
-				}
-,
-				"obj-17::obj-56" : 				{
-					"parameter_longname" : "Gcolorize[3]"
-				}
-,
-				"obj-17::obj-57" : 				{
-					"parameter_longname" : "Rcolorize[3]"
-				}
-,
-				"obj-17::obj-61" : 				{
-					"parameter_longname" : "Zoom hi[3]"
-				}
-,
-				"obj-17::obj-78" : 				{
-					"parameter_longname" : "Zoom lo[3]"
-				}
-,
-				"obj-17::obj-91::obj-10::obj-11" : 				{
-					"parameter_longname" : "Jitter[16]"
-				}
-,
-				"obj-17::obj-91::obj-10::obj-19" : 				{
-					"parameter_longname" : "Amount[2]"
-				}
-,
-				"obj-17::obj-91::obj-11::obj-11" : 				{
-					"parameter_longname" : "Jitter[15]"
-				}
-,
-				"obj-17::obj-91::obj-11::obj-18" : 				{
-					"parameter_longname" : "Smoothing[2]"
-				}
-,
-				"obj-17::obj-91::obj-12::obj-23" : 				{
-					"parameter_longname" : "Gain[17]"
-				}
-,
-				"obj-17::obj-91::obj-12::obj-25" : 				{
-					"parameter_longname" : "Offset[17]"
-				}
-,
-				"obj-17::obj-91::obj-12::obj-27" : 				{
-					"parameter_longname" : "Lacunarity[17]"
-				}
-,
-				"obj-17::obj-91::obj-12::obj-31" : 				{
-					"parameter_longname" : "H value[17]"
-				}
-,
-				"obj-17::obj-91::obj-13::obj-11" : 				{
-					"parameter_longname" : "Jitter[14]"
-				}
-,
-				"obj-17::obj-91::obj-15::obj-11" : 				{
-					"parameter_longname" : "H value[18]"
-				}
-,
-				"obj-17::obj-91::obj-15::obj-16" : 				{
-					"parameter_longname" : "Lacunarity[18]"
-				}
-,
-				"obj-17::obj-91::obj-15::obj-18" : 				{
-					"parameter_longname" : "Offset[18]"
-				}
-,
-				"obj-17::obj-91::obj-15::obj-19" : 				{
-					"parameter_longname" : "Gain[18]"
-				}
-,
-				"obj-17::obj-91::obj-1::obj-24" : 				{
-					"parameter_longname" : "Gain[14]"
-				}
-,
-				"obj-17::obj-91::obj-1::obj-26" : 				{
-					"parameter_longname" : "Offset[14]"
-				}
-,
-				"obj-17::obj-91::obj-1::obj-28" : 				{
-					"parameter_longname" : "Lacunarity[14]"
-				}
-,
-				"obj-17::obj-91::obj-1::obj-32" : 				{
-					"parameter_longname" : "H value[14]"
-				}
-,
-				"obj-17::obj-91::obj-3::obj-11" : 				{
-					"parameter_longname" : "Distortion[2]"
-				}
-,
-				"obj-17::obj-91::obj-4::obj-24" : 				{
-					"parameter_longname" : "Gain[15]"
-				}
-,
-				"obj-17::obj-91::obj-4::obj-26" : 				{
-					"parameter_longname" : "Offset[15]"
-				}
-,
-				"obj-17::obj-91::obj-4::obj-28" : 				{
-					"parameter_longname" : "Lacunarity[15]"
-				}
-,
-				"obj-17::obj-91::obj-4::obj-32" : 				{
-					"parameter_longname" : "H value[15]"
-				}
-,
-				"obj-17::obj-91::obj-5::obj-23" : 				{
-					"parameter_longname" : "Gain[16]"
-				}
-,
-				"obj-17::obj-91::obj-5::obj-25" : 				{
-					"parameter_longname" : "Offset[16]"
-				}
-,
-				"obj-17::obj-91::obj-5::obj-27" : 				{
-					"parameter_longname" : "Lacunarity[16]"
-				}
-,
-				"obj-17::obj-91::obj-5::obj-31" : 				{
-					"parameter_longname" : "H value[16]"
-				}
-,
-				"obj-17::obj-91::obj-6::obj-11" : 				{
-					"parameter_longname" : "Jitter[18]"
-				}
-,
-				"obj-17::obj-91::obj-6::obj-24" : 				{
-					"parameter_longname" : "X crackle[2]"
-				}
-,
-				"obj-17::obj-91::obj-6::obj-28" : 				{
-					"parameter_longname" : "Y crackle[2]"
-				}
-,
-				"obj-17::obj-91::obj-6::obj-29" : 				{
-					"parameter_longname" : "Z crackle[2]"
-				}
-,
-				"obj-17::obj-91::obj-9::obj-11" : 				{
-					"parameter_longname" : "Jitter[17]"
-				}
-,
-				"obj-17::obj-91::obj-9::obj-16" : 				{
-					"parameter_longname" : "Shading[2]"
-				}
-,
 				"obj-1::obj-45" : 				{
 					"parameter_longname" : "live.text[2]"
 				}
 ,
 				"obj-1::obj-61" : 				{
 					"parameter_longname" : "scale[2]"
-				}
-,
-				"obj-34::obj-100" : 				{
-					"parameter_longname" : "Speed[1]"
-				}
-,
-				"obj-34::obj-21" : 				{
-					"parameter_longname" : "Colorize[1]"
-				}
-,
-				"obj-34::obj-5" : 				{
-					"parameter_longname" : "Function[1]"
-				}
-,
-				"obj-34::obj-55" : 				{
-					"parameter_longname" : "Bcolorize[1]"
-				}
-,
-				"obj-34::obj-56" : 				{
-					"parameter_longname" : "Gcolorize[1]"
-				}
-,
-				"obj-34::obj-57" : 				{
-					"parameter_longname" : "Rcolorize[1]"
-				}
-,
-				"obj-34::obj-61" : 				{
-					"parameter_longname" : "Zoom hi[1]"
-				}
-,
-				"obj-34::obj-78" : 				{
-					"parameter_longname" : "Zoom lo[1]"
-				}
-,
-				"obj-34::obj-91::obj-10::obj-11" : 				{
-					"parameter_longname" : "Jitter[7]"
-				}
-,
-				"obj-34::obj-91::obj-10::obj-19" : 				{
-					"parameter_longname" : "Amount[1]"
-				}
-,
-				"obj-34::obj-91::obj-11::obj-11" : 				{
-					"parameter_longname" : "Jitter[6]"
-				}
-,
-				"obj-34::obj-91::obj-11::obj-18" : 				{
-					"parameter_longname" : "Smoothing[1]"
-				}
-,
-				"obj-34::obj-91::obj-12::obj-23" : 				{
-					"parameter_longname" : "Gain[8]"
-				}
-,
-				"obj-34::obj-91::obj-12::obj-25" : 				{
-					"parameter_longname" : "Offset[8]"
-				}
-,
-				"obj-34::obj-91::obj-12::obj-27" : 				{
-					"parameter_longname" : "Lacunarity[8]"
-				}
-,
-				"obj-34::obj-91::obj-12::obj-31" : 				{
-					"parameter_longname" : "H value[8]"
-				}
-,
-				"obj-34::obj-91::obj-13::obj-11" : 				{
-					"parameter_longname" : "Jitter[5]"
-				}
-,
-				"obj-34::obj-91::obj-15::obj-11" : 				{
-					"parameter_longname" : "H value[9]"
-				}
-,
-				"obj-34::obj-91::obj-15::obj-16" : 				{
-					"parameter_longname" : "Lacunarity[9]"
-				}
-,
-				"obj-34::obj-91::obj-15::obj-18" : 				{
-					"parameter_longname" : "Offset[9]"
-				}
-,
-				"obj-34::obj-91::obj-15::obj-19" : 				{
-					"parameter_longname" : "Gain[9]"
-				}
-,
-				"obj-34::obj-91::obj-1::obj-24" : 				{
-					"parameter_longname" : "Gain[5]"
-				}
-,
-				"obj-34::obj-91::obj-1::obj-26" : 				{
-					"parameter_longname" : "Offset[5]"
-				}
-,
-				"obj-34::obj-91::obj-1::obj-28" : 				{
-					"parameter_longname" : "Lacunarity[5]"
-				}
-,
-				"obj-34::obj-91::obj-1::obj-32" : 				{
-					"parameter_longname" : "H value[5]"
-				}
-,
-				"obj-34::obj-91::obj-3::obj-11" : 				{
-					"parameter_longname" : "Distortion[1]"
-				}
-,
-				"obj-34::obj-91::obj-4::obj-24" : 				{
-					"parameter_longname" : "Gain[6]"
-				}
-,
-				"obj-34::obj-91::obj-4::obj-26" : 				{
-					"parameter_longname" : "Offset[6]"
-				}
-,
-				"obj-34::obj-91::obj-4::obj-28" : 				{
-					"parameter_longname" : "Lacunarity[6]"
-				}
-,
-				"obj-34::obj-91::obj-4::obj-32" : 				{
-					"parameter_longname" : "H value[6]"
-				}
-,
-				"obj-34::obj-91::obj-5::obj-23" : 				{
-					"parameter_longname" : "Gain[7]"
-				}
-,
-				"obj-34::obj-91::obj-5::obj-25" : 				{
-					"parameter_longname" : "Offset[7]"
-				}
-,
-				"obj-34::obj-91::obj-5::obj-27" : 				{
-					"parameter_longname" : "Lacunarity[7]"
-				}
-,
-				"obj-34::obj-91::obj-5::obj-31" : 				{
-					"parameter_longname" : "H value[7]"
-				}
-,
-				"obj-34::obj-91::obj-6::obj-11" : 				{
-					"parameter_longname" : "Jitter[9]"
-				}
-,
-				"obj-34::obj-91::obj-6::obj-24" : 				{
-					"parameter_longname" : "X crackle[1]"
-				}
-,
-				"obj-34::obj-91::obj-6::obj-28" : 				{
-					"parameter_longname" : "Y crackle[1]"
-				}
-,
-				"obj-34::obj-91::obj-6::obj-29" : 				{
-					"parameter_longname" : "Z crackle[1]"
-				}
-,
-				"obj-34::obj-91::obj-9::obj-11" : 				{
-					"parameter_longname" : "Jitter[8]"
-				}
-,
-				"obj-34::obj-91::obj-9::obj-16" : 				{
-					"parameter_longname" : "Shading[1]"
 				}
 ,
 				"obj-37::obj-100" : 				{
