@@ -1,0 +1,24 @@
+{
+	"pattrstorage" : 	{
+		"name" : "icon",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"bfg::zoom-mult" : [ 1 ],
+					"bfg::lozoom" : [ 1.0 ],
+					"bfg::hizoom" : [ 1.0 ],
+					"bfg::speed" : [ 0.0 ],
+					"bfg[1]::zoom-mult" : [ 1 ],
+					"bfg[1]::lozoom" : [ 1.0 ],
+					"bfg[1]::hizoom" : [ 1.0 ],
+					"bfg[1]::speed" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
